@@ -7,9 +7,13 @@
 	margin: 0 auto;
 }
 
-@import url(base/_mixins.scss);
-@import url(base/_variables.scss);
-@import url(blocks/_promo.scss);
-@import url(blocks/_header.scss);
+@import 'base/variables';
+@import 'base/mixins';
+@import 'blocks/promo';
+@import 'blocks/header';
+@import 'blocks/buttons';
+@import 'blocks/advantages';
+
+
 
 
