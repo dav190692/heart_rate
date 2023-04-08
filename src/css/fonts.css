@@ -3,7 +3,7 @@
 @font-face {
 	font-family: 'Museo Sans Cyrl 500';
 	src: url('../fonts/MuseoSansCyrl-500.eot');
-	src: local('MuseoSansCyrl-500'),
+	src: local('../MuseoSansCyrl-500'),
 		url('../fonts/MuseoSansCyrl-500.eot?#iefix') format('embedded-opentype'),
 		url('../fonts/MuseoSansCyrl-500.woff') format('woff'),
 		url('../fonts/MuseoSansCyrl-500.ttf') format('truetype');

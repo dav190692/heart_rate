@@ -39,4 +39,67 @@ $(document).ready(function(){
       toggleSlide('.catalog-item__link');
       toggleSlide('.catalog-item__back');
 
+
+      //modal
+
+      $('[data-modal=consultation]').on('click', function(){
+        $('.overlay, #consultation').fadeIn('slow');
+
+      });
+
+      $('.modal__close').on('click', function(){
+        $('.overlay, #consultation, #order, #thanks').fadeOut('slow');
+      });
+
+
+      $('.button_mini').each(function(i){
+        $(this).on('click', function(){
+          $('#order .modal__descr').text($('.catalog-item__subtitle').eq(i).text());
+          $('.overlay, #order').fadeIn('slow');
+        });
+
+      });
+
+      //validate//
+
+
+
+
+      function validateForms(form){
+
+        $(form).validate({
+          rules: {
+            name: {
+              required: true,
+              minlength: 3
+            },
+            phone: "required",
+            email: {
+              required: true,
+              email: true
+            }
+          },
+  
+          messages: {
+            name:{
+              required: "Пожалуста, введите свое имя",
+              minlength: jQuery.validator.format("Введите {0} символа!")
+            },
+            phone: "Пожалуста, введите свой номер телефона",
+            email: {
+              required: "Пожалуста, введите свою почту",
+              email: "Неправильно введен адрес почты"
+            }
+          }
+        });
+      }
+
+      validateForms('#consultation form');
+      validateForms('#order form');
+      validateForms('#consultation-form');
+
+
+  $('input[name=phone]').mask("+374 (99) 99-99-99");
+
+  
   });
