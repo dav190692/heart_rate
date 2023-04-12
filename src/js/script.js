@@ -128,5 +128,28 @@ $(document).ready(function(){
     return false;
   });
 
+  //Smooth Scroll and pageup
+
+  $(window).scroll(function(){
+    if ($(this).scrollTop()> 1600) {
+      $('.pageup').fadeIn();
+    } else {
+      $('.pageup').fadeOut();
+    }
+
+  });
+
+  $("a.pageup").click(function() {
+    $("html, body").animate({
+       scrollTop: $($(this).attr("href")).offset().top + "px"
+    }, {
+       duration: 900,
+       easing: "swing"
+    });
+    return false;
+ });
+
+
+
   
   });
