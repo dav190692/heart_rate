@@ -1,62 +1,268 @@
 @media (max-width: 991px) {
-    .header{
-        display: flex;
-        justify-content: center;
-        &__logo{
-            padding-right: 30px;
-        }
-        &__official {
-            padding-right: 30px;
-        }
-        &__contacts {
-            padding-right: 30px;
-        }
+	.header{
+		display: flex;
+		justify-content: center;
+		&__logo{
+			padding-right: 30px;
+		}
+		&__official {
+			padding-right: 30px;
+		}
+		&__contacts {
+			padding-right: 30px;
+		}
 
-    }
+	}
 
-    .promo {
-        &__wrapper {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        &__header {
-            font-size: 38px;
-        }
-    }
+	.promo {
+		&__wrapper {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+		&__header {
+			font-size: 38px;
+		}
+	}
 
-    .advantages {
-        &__wrapper {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-between;
-        }
-        &__item {
-            // width: 500px;
-            margin-bottom: 20px;
-        }
-    }
+	.advantages {
+		&__wrapper {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: space-between;
+		}
+		&__item {
+			// width: 500px;
+			margin-bottom: 20px;
+		}
+	}
 
-    .consultation {
-        .title{
-            &_left{
-                text-align: center;
-                font-size: 30px;
-            }
-        }
-        &__descr {
-            text-align: center;
-        }
-    }
+	.consultation {
+		.title{
+			&_left{
+				text-align: center;
+				font-size: 30px;
+			}
+		}
+		&__descr {
+			text-align: center;
+		}
+		form {
+			margin-left: 50%;
+			transform: translateX(-50%);
+			
+		}
+	}
+	// .carousel {
+	//     &__inner {
+	//         .my-dots {
+	//             position: absolute;
+	//             bottom: -45px;
+	//             display: block;
+	//             width: 100%;
+	//             padding: 0;
+	//             list-style: none;
+	//             text-align: center;
+	//             margin-bottom: 0;
+	//           }
+			  
+	//           .my-dots li {
+	//             position: relative;
+	//             display: inline-block;
+	//             width: 20px;
+	//             height: 20px;
+	//             margin: 0 5px;
+	//             padding: 0;
+	//             cursor: pointer;
+	//           }
+			  
+	//           .my-dots li button {
+	//             font-size: 0;
+	//             line-height: 0;
+	//             display: block;
+	//             width: 20px;
+	//             height: 20px;
+	//             padding: 5px;
+	//             cursor: pointer;
+	//             color: transparent;
+	//             border: 0;
+	//             outline: none;
+	//             background: transparent;
+	//           }
+			  
+	//           .my-dots li button:hover,
+	//           .my-dots li button:focus {
+	//             outline: none;
+	//           }
+			  
+	//           .my-dots li button:hover:before,
+	//           .my-dots li button:focus:before {
+	//             opacity: 1;
+	//           }
+			  
+	//           .my-dots li button:before {
+	//             font-family: 'slick';
+	//             font-size: 6px;
+	//             line-height: 20px;
+	//             position: absolute;
+	//             top: 0;
+	//             left: 0;
+	//             width: 20px;
+	//             height: 20px;
+	//             content: url('https://upload.wikimedia.org/wikipedia/commons/b/b7/Rule_Segment_-_Circle_open_-_20px.svg');
+	//             text-align: center;
+	//             opacity: .25;
+	//             color: black;
+	//             -webkit-font-smoothing: antialiased;
+	//             -moz-osx-font-smoothing: grayscale;
+				 
+	//           }
+			  
+	//           .my-dots li.slick-active button:before {
+	//             opacity: .75;
+	//             color: black;
+	//           }
+	//     }
+	// }
+	.catalog {
+		&__tab {
+			width: 180px;
+		}
+		&__content {
+			&_active {
+				display: flex;
+				justify-content: center;
+				flex-wrap: wrap;
 
-    .feed-form{
-        display: flex;
-        flex-direction: column;
-        align-items:center;
-    
-        // left: 50%;
-    }
+			}
+
+		}
+	}
+	.reviews {
+		&__item {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+		&__img {
+			margin-bottom: 10px;
+		}
+	}
+
+	.footer {
+		&__info {
+			width: 380px;
+		}
+	}
+}
+
+@media (max-width: 767px) {
+	.promo{
+		.header {
+			display: flex;
+			flex-direction: column;
+			&__official {
+				margin-top: 25px;
+			}
+			&__contacts{
+				margin-top: 25px;
+			}
+		}
+		&__header {
+			font-size: 30px;
+		}
+		&__subheader {
+			font-size: 20px;
+		}
+
+	}
+	.button{
+		&_main{
+			width: 250px;
+		}
+	}
+	.advantages {
+		.title {
+			font-size: 25px;
+		}
+	}
+	.consultation {
+		.title {
+			font-size: 25px;
+		}
+		.feed-form {
+			width: 250px;
+		}
+	}
+	.catalog {
+		.title{
+			font-size: 25px;
+		}
+		&__tab {
+			width: 150px;
+			font-size: 15px;
+		}
+	}
+	.reviews {
+		.title {
+			font-size: 25px;
+		}
+	}
+}
+@media (max-width: 575px) {
+.promo{
+	&__header{
+	  font-size: 20px;  
+	}
+	&__subheader {
+		font-size: 15px;
+		text-align: center;
+	}
+	&__icon{
+		margin-bottom: 20px;
+	}
+	&__icons{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+   }
+	
+}
+.advantages {
+	.title {
+		font-size: 20px;
+	}
 
 }
-    
+.consultation {
+	.title {
+		font-size: 20px;
+	}
+}
+.catalog {
+	.title {
+		font-size: 20px;
+	}
+	&__tabs {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+}
+.footer {
+&__info {
+	width: 300px;
+}
+&__social-item {
+	width: 25px;
+	height: 25px;
+	img {
+		height:10px;
+	}
+}
+
+}
+
+}
+	

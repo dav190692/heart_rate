@@ -5,11 +5,14 @@ $(document).ready(function(){
         adaptiveHeight: true,
         prevArrow: '<button type="button" class="slick-prev"> <img src="icons/chevron-left-solid.png" alt=""></img> </button>',
         nextArrow: '<button type="button" class="slick-next"><img src="icons/chevron-right-solid.png" alt=""></img></button>',
+        dots: true,
+        dotsClass: "my-dots",
         responsive: [
             {
               breakpoint: 992,
                 settings: {
-                    dots: true,
+                    // dots: true,
+                    // dotsClass: "my-dots",
                     arrows: false
               }}]
       });
