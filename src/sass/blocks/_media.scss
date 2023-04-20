@@ -167,6 +167,9 @@
 			}
 			&__contacts{
 				margin-top: 25px;
+				button{
+					margin-top: 30px;
+				}
 			}
 		}
 		&__header {
@@ -247,8 +250,19 @@
 	}
 	&__tabs {
 		display: flex;
-		flex-direction: column;
+		// flex-direction: column;
+		justify-content: center;
 		align-items: center;
+	}
+	&__tab{
+		width: 100px;
+		height: 40px;
+		font-size: 10px;
+		line-height: 40px;
+		transform: skewX(-10deg);
+		div{
+			transform: skewX(10deg);
+		}
 	}
 }
 .footer {
